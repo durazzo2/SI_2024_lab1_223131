@@ -1,0 +1,62 @@
+tomcat@Tomcat:~$ mkdir SI_2024_lab1_223131
+tomcat@Tomcat:~$ cd SI_2024_lab1_223131/
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git init	->inicijalizacija na git
+
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git remote add origin git@github.com:durazzo2/SI_2024_lab1_223131.git	->dodavame remote repo
+
+tomcat@Tomcat:~/SI_2024_lab1_223131$ nano README.md 	->pravime readme
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git add README.md  ->add na scena
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git commit-m "Initial commit" ->commit na readme
+
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git add --all -> gi dodavame java klasite
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git commit -m "Add starter code"	->commit na istite
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git push -u origin master		->push na github
+
+
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git branch bug1	->pravime granka 1
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git branch bug2	->pravime granka2
+
+
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git checkout bug1		->se prefrlame na granka 1
+tomcat@Tomcat:~/SI_2024_lab1_223131$ nano SILab1_1.java 	->menuvame vo klasata
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git add SILab1_1.java 	->ja dodavame
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git commit -m "Fix wrong condition in filterOddLengthStgrings"	->commit na istata
+
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git checkout bug2	->se prefrlame na bug2 grankata
+tomcat@Tomcat:~/SI_2024_lab1_223131$ nano SILab1_2.java 	->smenuvame vo klasata
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git add SILab1_2.java 	->add na scena
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git commit -m "Fix wrong condition in makeBigStringFrom" 	->commit na istata
+
+
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git checkout bug1 -> se vrakjame na bug1 grankata
+tomcat@Tomcat:~/SI_2024_lab1_223131$ nano SILab1Main.java 	->smeuvame vo mainnot
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git add SILab1Main.java 	->add na scena
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git commit -m "Call method filterOddLengthStrings in main class" ->commit so soodvetna poraka
+
+
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git checkout bug2 	->se vrakjame na bug2
+omcat@Tomcat:~/SI_2024_lab1_223131$ nano SILab1Main.java  ->meuvame vo main klasata
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git add SILab1Main.java 	-> add na scena
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git commit -m "Call method makeBigStringFrom in main class" ->commit na istoto
+
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git push origin bug2 -> 
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git push origin bug1 -> sinhronizacija
+
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git checkout master ->se vrakjame na master
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git merge bug1 -> ja spojuvame master so bug1
+
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git push --all ->sinhronizacija na grankite
+
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git checkout bug2 -> se vrakjame na masgter
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git rebase master -> probuvame rebase no se javuva konflikt
+tomcat@Tomcat:~/SI_2024_lab1_223131$ nano SILab1Main.java  -> se reshava konfliktot
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git add SILab1Main.java ->add na reshenieto 
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git rebase --continue -> se prodolzuva so rebase
+
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git checkout master -> se vrakjame na master
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git merge bug2 ->ja spujuvame bug2
+
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git push --all ->sync
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git push --force origin bug2 ->sync so force
+
+tomcat@Tomcat:~/SI_2024_lab1_223131$ git log -> gi zemame logovite

@@ -1,0 +1,35 @@
+commit 8d7c806e345506246646f0770fccda7e76ab29bf 
+Author: Teodor Duracoski <teodurac@gmail.com>
+Date:   Sat Mar 30 17:45:59 2024 +0100
+
+    Fix rebase conflict
+
+commit 7826e637e01ee4096c6be7a8286900ee1b369f48
+Author: Teodor Duracoski <teodurac@gmail.com>
+Date:   Sat Mar 30 17:38:39 2024 +0100
+
+    Fix wrong condition in makeBigStringFrom
+
+commit d3a6f7ca1bc508cba4dead9bd3406e99121c609e 
+Author: Teodor Duracoski <teodurac@gmail.com>
+Date:   Sat Mar 30 17:35:36 2024 +0100
+
+    Call method filterOddLengthStrings in main class
+
+commit 6dddbda4b2da913d56df8c4a4f7077fec2c4cdae
+Author: Teodor Duracoski <teodurac@gmail.com>
+Date:   Sat Mar 30 17:33:12 2024 +0100
+    
+    Fix wrong condition in filterOddLengthStrings
+
+commit 7ae1604c5696a4224c7362a286d9245f4c5134df
+Author: Teodor Duracoski <teodurac@gmail.com>
+Date:   Sat Mar 30 17:24:43 2024 +0100
+
+    Add starter code
+
+commit 471e4b4056628b14b2baa9c5ff9ef31b78588ee2
+Author: Teodor Duracoski <teodurac@gmail.com>
+Date:   Sat Mar 30 17:20:09 2024 +0100
+
+    Initial commit
